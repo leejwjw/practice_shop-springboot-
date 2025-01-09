@@ -49,7 +49,7 @@ public class ProductController {
     }
 
     // 게시글 목록 요청
-    @PreAuthorize("hasRole('ROLE_ADMIN')") // 권한 추가 예시
+    //@PreAuthorize("hasRole('ROLE_ADMIN')") // 권한 추가 예시
     @GetMapping("/list")
     public PageResponseDTO<ProductDTO> list(PageRequestDTO pageRequestDTO) {
         log.info("/products/LIST - pageRequestDTO : {}", pageRequestDTO);
